@@ -1,45 +1,51 @@
-/* FONTS */
-*{
+/* FONTS 
+
     font-family: "Inria Serif", serif;
     font-weight: 400;
     font-style: normal;
-}
-*{
+
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
-*{
+
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-}
+*/
 
 /* ALL */
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* NAVBAR */
+/* Navigation Bar */
+.container-0{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+    margin: 1em;
+    z-index: 100;
+}
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.3rem ;
+    padding: 1.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;;
+    z-index: 100;
     border-bottom: 3px solid rgb(0, 0, 0);
 }
 
-.brand{
+.brand {
     font-family: "Inter", sans-serif;
     color: #183B4B;
     font-weight: 700;
@@ -47,19 +53,72 @@
     padding-left: 1em;
 }
 
-.navbar a{
+.navbar a {
     font-family: "Inter", sans-serif;
     color: #000000;
     font-weight: 400;
     text-decoration: none;
-    margin: 1rem ;
-    font-size: 1em;
+    margin: 1rem;
+    font-size: 1.2em;
 }
 
-/* CONTENT */
+/* Home Section  */
+.container{
+    margin-left: 5em;
+}
+.title {
+    position: fixed;
+    display: grid;
+    grid-template-columns:  1fr 1fr;;
+    margin-top: 6em;
+}
+
+.title-top { 
+    font-family: "Inter", sans-serif;
+    color: #183B4B;
+    font-weight: 700;
+    font-size: 3.2em;
+}
+.title-bottom {
+    font-family: "Inter", sans-serif;
+    color: #000000;
+    font-weight: 350;
+    font-size: 1.6em;
+}
+.start-button{
+    background-color: #183B4B;
+    border: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding: 15px 85px;
+    text-align: center;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.right-title{
+    position: relative;
+}
+#top-image{ /*Image editing*/
+    max-width: 90%; 
+}
+.circle {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 64%;
+    height: 84%; 
+    border-radius: 50%; 
+    background-color: #183B4B;
+    z-index: -1;
+  }
+
+  
 
 /* MEDIA QUERIES */
-@media (max-width: 768px) {
+@media (max-width: 900px) { /* Web Sizing */
     .header {
         padding: 1.3rem 5%;
     }
@@ -72,26 +131,50 @@
         font-size: 53.33%;
     }
 }
-
-@media (max-width: 450px) {
+@media (max-width: 810px) {
     .header {
-        padding: 1.3rem 3%;
+        padding: 1.3rem 5%;
+        border-bottom: 2px solid rgb(0, 0, 0);
     }
-
     .navbar a {
-        margin-left: 0.5rem;
+        margin-left: 1rem;
     }
+    html {
+        font-size: 52%;
+    }
+}
 
+@media (max-width: 700px) {
+    .header {
+        padding: 1.2rem 3%;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .navbar a {
+        margin-left: 0.6rem;
+    }
     html {
         font-size: 50%;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 428px) { /* Phone Sizing */
+    .header {
+        padding: 1.3rem 3%;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .navbar a {
+        margin-left: 0.3rem;
+    }
     html {
         font-size: 40%;
     }
+    .container{
+        margin-left:2rem ;
+    }
+    .brand{
+        padding-left: 0.5rem;
+    }
+    .title-top{
+        font-size: 2.3em;
+    }
 }
-
-
-
