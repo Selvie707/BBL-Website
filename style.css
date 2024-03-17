@@ -22,7 +22,7 @@
 }
 
 /* Navigation Bar */
-.container-0{
+.container-header{
     top: 0;
     left: 0;
     width: 100%;
@@ -45,15 +45,17 @@
     border-bottom: 3px solid rgb(0, 0, 0);
 }
 
-.brand {
+.brand { /* Header title */
     font-family: "Inter", sans-serif;
     color: #183B4B;
     font-weight: 700;
     font-size: 2em;
     padding-left: 1em;
 }
-
-.navbar a {
+.navbar{
+    margin-right: 3rem ;
+}
+.navbar a { /* Nabvar text */
     font-family: "Inter", sans-serif;
     color: #000000;
     font-weight: 400;
@@ -63,75 +65,109 @@
 }
 
 /* Home Section  */
+
 .container{
     margin-left: 5em;
 }
-.title {
+
+.title { /* Home Section Positioning */
     position: fixed;
     display: grid;
     grid-template-columns:  1fr 1fr;;
-    margin-top: 6em;
+    margin-top: 4em;
 }
-
-.title-top { 
+.left-title{
+    margin-top: 2.5em;
+}
+.title-top { /* Home title Styling */
     font-family: "Inter", sans-serif;
     color: #183B4B;
-    font-weight: 700;
-    font-size: 3.2em;
+    font-weight: 680;
+    font-size: 3.3em;
 }
-.title-bottom {
+.title-bottom { /* Tagline styling */
     font-family: "Inter", sans-serif;
     color: #000000;
     font-weight: 350;
     font-size: 1.6em;
 }
-.start-button{
+
+.title-button{
+    margin-top: 8rem;
+    margin-left: 5.5rem;
+}
+.start-button{ /* Button Styling */
     background-color: #183B4B;
     border: none;
     color: white;
     font-family: "Inter", sans-serif;
-    font-weight: 700;
-    padding: 15px 85px;
+    font-weight: 650;
+    padding: 0.5em 2.7em;
     text-align: center;
     font-size: 2em;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 35px;
 }
-.right-title{
+.right-title{ /* Home image positioning */
     position: relative;
 }
-#top-image{ /*Image editing*/
+#top-image{ /*Home image editing */
     max-width: 90%; 
 }
-.circle {
+.circle { /* Backround Circle (jgn ditiru) */
     position: absolute;
     top: 10%;
     left: 15%;
     width: 64%;
-    height: 84%; 
+    height: 88%; 
     border-radius: 50%; 
     background-color: #183B4B;
     z-index: -1;
   }
 
-  
-
 /* MEDIA QUERIES */
-@media (max-width: 900px) { /* Web Sizing */
+
+@media (max-width: 1300px) { /* Web Sizing */
     .header {
         padding: 1.3rem 5%;
     }
 
-    .navbar a {
+    .navbar a { /* navbar button */
         margin-left: 1rem;
     }
 
     html {
-        font-size: 53.33%;
+        font-size: 80%;
     }
 }
-@media (max-width: 810px) {
+@media (max-width: 1000px) { /* Web Sizing */
+    .header {
+        padding: 1.3rem 5%;
+    }
+
+    .navbar a { /* navbar button */
+        margin-left: 1rem;
+    }
+
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 910px) {
+    .header {
+        padding: 1.3rem 5%;
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+    .navbar a { /* navbar button */
+        margin-left: 1rem;
+    }
+    html {
+        font-size: 60.33%;
+    }
+}
+@media (max-width: 810px) { /* Tablet Sizing */
     .header {
         padding: 1.3rem 5%;
         border-bottom: 2px solid rgb(0, 0, 0);
@@ -140,41 +176,97 @@
         margin-left: 1rem;
     }
     html {
-        font-size: 52%;
+        font-size: 55%;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 660px) {
     .header {
         padding: 1.2rem 3%;
         border-bottom: 1px solid rgb(0, 0, 0);
     }
-    .navbar a {
+    .navbar a { /* navbar button */
         margin-left: 0.6rem;
     }
     html {
-        font-size: 50%;
+        font-size: 45%;
     }
 }
 
-@media (max-width: 428px) { /* Phone Sizing */
+@media (max-width: 540px) { /* Phone Sizing huge banget*/
     .header {
         padding: 1.3rem 3%;
         border-bottom: 1px solid rgb(0, 0, 0);
     }
-    .navbar a {
+    .navbar a { /* navbar button */
         margin-left: 0.3rem;
     }
     html {
         font-size: 40%;
     }
     .container{
-        margin-left:2rem ;
+        margin-left: 3rem ;
     }
     .brand{
         padding-left: 0.5rem;
     }
     .title-top{
-        font-size: 2.3em;
+        font-size: 2.5em;
+    }
+    .title-button{ /* Button Position */
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 428px) { /* Phone Sizing huge*/
+    .header {
+        padding: 1.3rem 3%;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .navbar a { /* navbar button */
+        margin-left: 0.3rem;
+    }
+    html {
+        font-size: 43%;
+    }
+    .container{
+        margin-left:2.5rem ;
+    }
+    .brand{
+        padding-left: 0.5rem;
+    }
+    .title-top{
+        font-size: 2.5em;
+    }
+    .title-button{ /* Button Position */
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 390px) { /* Phone Sizing small*/
+    .header {
+        padding: 1.3rem 3%;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .navbar a { /* navbar button */
+        margin-left: 0.3rem;
+    }
+    html {
+        font-size: 43%;
+    }
+    .container{
+        margin-left:2.5rem ;
+    }
+    .brand{
+        padding-left: 0.5rem;
+    }
+    .title-top{
+        font-size: 2em;
+    }
+    .title-button{ /* Button Position */
+        margin-top: 3rem;
+        margin-left: 1rem;
     }
 }
