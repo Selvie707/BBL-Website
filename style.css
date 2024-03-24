@@ -15,42 +15,41 @@
 */
 
 /* ALL */
-* {
+
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
     overflow-x: hidden;
 }
-.huge-text{
+.huge-text{/* huge blue text styling */
     font-family: "Inter", sans-serif;
     color: #183B4B;
     font-weight: 680;
     font-size: 3.85em;
     padding-bottom: 0.2em;
 }
-.regular-text{
+.regular-text{/* regular black text styling */
     font-family: "Inter", sans-serif;
     color: #000000;
     font-weight: 350;
     font-size: 1.7em;
 }
-.regular-text-2{
+.regular-text-2{/* regular black text-2 styling */
     font-family: "Inria Sans", sans-serif;
     color: #000000;
     font-weight: 350;
     font-size: 1.7em;
 }
 
-.container{
+.container{ /* base container */
     padding-right:4rem ;
     padding-left: 4rem;
 }
-.container-1{
+.container-1{ /* container type 1 for margin bottom */
     margin-bottom: 13.3rem
 }
-.container-2{
+.container-2{ /* container type 2 for margin bottom */
     margin-bottom: 10rem;
 }
 /* Navigation Bar */
@@ -58,8 +57,7 @@ body{
 .container-header{
     width: 100%;
 }
-
-.header {
+.header { /*Navbar styling*/
     position: relative;
     top: 0;
     left: 0;
@@ -72,7 +70,6 @@ body{
     border-bottom: 3px solid rgb(0, 0, 0);
     background-color: white;
 }
-
 .brand { /* Header title */
     font-family: "Inter", sans-serif;
     color: #183B4B;
@@ -80,7 +77,7 @@ body{
     font-size: 2.3em;
     padding-left: 1em;
 }
-.navbar{
+.navbar{ /* bbl brand in navbar */
     margin-right: 2rem ;
 }
 .navbar a { /* Nabvar text */
@@ -93,19 +90,17 @@ body{
 }
 
 /* Main Content */
+
 /* Home Section  */
-
-
 .title { /* Home Section Positioning */
     display: grid;
     grid-template-columns:  1.9fr 1fr;;
     margin-top: 4em;
 }
-.left-title{
+.left-title{ /* left title positioning */
     margin-top: 2.5em;
 }
-
-.title-button{
+.title-button{ /* Button Positioning */
     margin-top: 8rem;
     margin-left: 5.5rem;
 }
@@ -123,7 +118,6 @@ body{
     border-radius: 35px;
 }
     /* Right Section Title */
-    
 .right-title{ /* Home image position */
     position: relative;
 }
@@ -135,69 +129,67 @@ body{
 }
 
 /* About Us Section */
-
-.about-we{
+.about-we{ /* About us positioning */
     display: grid;
     grid-template-columns:  1.3fr 1.7fr;;
 }
-.left-bout{
+.left-bout{ /* Left side about us positioning */
     margin-left: 5.5rem;
 }
-#bout-image{
+#bout-image{ /* About us image size */
     max-width: 93%; 
 }
-    /* Right Section */
-.right-bout{
+    /* About us Right Section */
+.right-bout{ /* right side about us positioning */
     text-align: right;
     margin-top: 8rem;
 }
 .right-bout .huge-text{
     padding-bottom: 0.2em;
 }
-
     /* Vision Section */
-.vision{
+.vision{ /* Vision section position */
     text-align: center;
 }
     /* Mission Section */
-.mission .huge-text{
+.mission .huge-text{ /* Mission Section huge text position */
     text-align: center;
 }
-.mission .regular-text-2{
+.mission .regular-text-2{ /* Mission Section regular-text-2 position */
     margin-left: 10rem;
     margin-right: 10rem;
 }
 
 /* Registration Section */
 .registration{
-    display: grid;
+    display: grid; /* Registration Section Positioning */
     grid-template-columns: 1fr 1fr;
 }
-#regimage{
+#regimage{ /* Registration image size */
     width: 73.5%;
-
 }
-.regimage-box {
+.regimage-box { /* Registration image position */
     object-fit: cover;
     right: 11.5%;
     position: relative;
 }
-.regist-content{
+    /* Right section Registration */
+.regist-content{ /* Right section Registration position */
     padding-top: 9.5rem;
 }
-.regist-content .regular-text{
+.regist-content .regular-text{ /* Registration section regular-text position */
     padding-bottom: 2rem;
 }
-#date{
+#date{ /* Registration date */
     text-align: center;
 }
-.regbutton-box{
+.regbutton-box{ /* Registration button position */
     justify-content: center;
     align-items: center;
     display: flex;
     margin-top: 1.5rem;
 }
-.regist-button{
+.regist-button{ /* Registration button style */
     cursor: pointer;
     text-align: center;
     padding: 0.8rem 3rem 1.6rem;
@@ -211,208 +203,23 @@ body{
     font-weight: 650;
     font-size: 2.1em;
 }
-.regist-button #learntext{
+.regist-button #learntext{  /* Registration button text position */
     display: inline-block;
     margin-right: 2rem;
 }
-.regist-button #pointy{
+.regist-button #pointy{  /* Registration button symbol style */
     font-family: monospace;
     font-size: 3rem;
 }
 
-
 /* MEDIA QUERIES */
 
-@media (max-width: 1300px) { /* Web Sizing */
-/* All */
-.container{
-    padding: 5%;
-}
-.container-1{ /* container type 1 margin bottom*/
-    margin-bottom: 20rem;
-}
-.container-2{ /* container type 2 margin bottom*/
-    margin-bottom: 8rem;
-}
-.huge-text{ /* huge blue text sizing */
-    font-size: 7em;
-}
-.regular-text{ /* regular black text sizing */
-    font-size: 3.8em;
-}
-.regular-text-2{
-    font-size: 3.5rem;
-}
-html{
-    font-size: 40%;
-}
-/* Navbar */
-.header {
-    padding: 3rem;
-    border-bottom: 3px solid rgb(0, 0, 0);
-}
-.navbar a { /* navbar button */
-    margin-left: 3rem;
-    font-size: 2.8em;
-}
-.brand{
-    padding-left: 3rem;
-    font-size: 4.8em;
-}
-/* home section */
-.title{ /* home section top margin */
-    margin-top: 3rem;
-}    
-.title-button{ /* Button Position */
-    margin-top: 12em;
-    margin-left: 8rem;
-}
-.start-button{
-    font-size: 4em;
-}
-/* about us section*/
-.right-bout{
-    margin-top: 20rem;
-}
-.left-bout {
-    width: 100%;
-}
-.left-bout img{
-    right: 10%;
-    top: 0%;
-    position: relative;
-}
-/* mission section */
-.mission .regular-text-2{ /* mission lower text margin */
-    margin-left: 5% ;
-    margin-right: 5%;
-}
-
-/* registration section */
-.regimage-box {
-    right: 11.2%;
-}
-.regist-content{
-    padding-top: 25rem;
-}
-.regist-content .huge-text{
-    padding-bottom: 2rem;
-}
-.regist-content .regular-text{
-    padding-bottom: 3rem ;
-}
-.regist-button{ /* regist button sizing */
-    font-size: 4em;
-    padding: 3rem 10rem 3.5rem;
-    border-radius: 20px;
-}
-.regist-button #learntext{ /* regist button text sizing */
-    display: inline-block;
-    margin-right: 1rem;
-}
-.regist-button #pointy{ /* regist button symbol sizing */
-    font-size: 6rem;
-}
-}
-
-@media (max-width: 1102.5px) { /* Web Sizing */
-/* All */
-.container{
-    padding: 5%;
-}
-.container-1{ /* container type 1 margin bottom*/
-    margin-bottom: 20rem;
-}
-.container-2{ /* container type 2 margin bottom*/
-    margin-bottom: 7rem;
-}
-.huge-text{ /* huge blue text sizing */
-    font-size: 6em;
-}
-.regular-text{ /* regular black text sizing */
-    font-size: 3.5em;
-}
-.regular-text-2{
-    font-size: 3.5rem;
-}
-html{
-    font-size: 40%;
-}
-/* Navbar */
-.header {
-    padding: 2.6rem;
-    border-bottom: 2px solid rgb(0, 0, 0);
-}
-.navbar{
-    margin-right: 0rem;
-}
-.navbar a { /* navbar button */
-    margin-left: 2rem;
-    font-size: 2.6em;
-}
-.brand{
-    padding-left: 2.4rem;
-    font-size: 4em;
-}
-/* home section */
-.title{ /* home section top margin */
-    margin-top: 3rem;
-}    
-.title-button{ /* Button Position */
-    margin-top: 12em;
-    margin-left: 8rem;
-}
-.start-button{
-    font-size: 3.5em;
-}
-/* about us section*/
-.right-bout{
-    margin-top: 15rem;
-}
-.left-bout {
-    width: 100%;
-}
-.left-bout img{
-    right: 30%;
-    top: 0%;
-    position: relative;
-}
-
-/* mission section */
-.mission .regular-text-2{ /* mission lower text margin */
-    margin-left: 5% ;
-    margin-right: 5%;
-}
-
-/* registration section */
-.regimage-box {
-    right: 11.2%;
-}
-.regist-content{
-    padding-top: 18rem;
-}
-.regist-content .huge-text{
-    padding-bottom: 2rem;
-    font-size: 4.5em;
-}
-.regist-content .regular-text{
-    padding-bottom: 3rem ;
-}
-.regist-button{ /* regist button sizing */
-    font-size: 3.8em;
-    padding: 2.5rem 8.5rem 3.3rem;
-    border-radius: 25px;
-}
-.regist-button #learntext{ /* regist button text sizing */
-    display: inline-block;
-    margin-right: 1rem;
-}
-.regist-button #pointy{ /* regist button symbol sizing */
-    font-size: 6rem;
-}
-
-
-}
+@media (max-width: 1150px) { /* Web Sizing */
+    /* All */
+    html{
+        font-size: 70%;
+    }
+    }
 
 @media (max-width: 910px) {
     /* All */
@@ -453,10 +260,7 @@ html{
         padding-left: 2.2rem;
         font-size: 3.4em;
     }
-    /* home section */
-    .title{ /* home section top margin */
-        margin-top: 3rem;
-    }    
+    /* home section */  
     .title-button{ /* Button Position */
         margin-top: 3rem;
         margin-left: 1rem;
@@ -465,38 +269,7 @@ html{
         padding: 0.7em 3em;
         font-size: 2.5em;
     }
-    /* about us section*/
-    .right-bout{
-        margin-top: 13rem;
-    }
-    .left-bout {
-        width: 100%;
-    }
-    .left-bout img{
-        right: 18%;
-        top: 0%;
-        position: relative;
-    }
-
-    /* mission section */
-    .mission .regular-text-2{ /* mission lower text margin */
-        margin-left: 5% ;
-        margin-right: 5%;
-    }
-
     /* registration section */
-    .regimage-box {
-        right: 11.5%;
-    }
-    .regist-content{
-        padding-top: 12rem;
-    }
-    .regist-content .huge-text{
-        padding-bottom: 2rem;
-    }
-    .regist-content .regular-text{
-        padding-bottom: 2rem ;
-    }
     .regist-button{ /* regist button sizing */
         font-size: 3em;
         padding: 1.8rem 6rem 2.5rem;
@@ -508,10 +281,9 @@ html{
     .regist-button #pointy{ /* regist button symbol sizing */
         font-size: 5rem;
     }
-
 }
 
-@media (max-width: 700px) {
+@media (max-width: 728px) {
     /* All */
     .container{
         padding: 5%;
@@ -529,7 +301,7 @@ html{
         font-size: 2.5em;
     }
     .regular-text-2{
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
     html{
         font-size: 40%;
@@ -550,10 +322,7 @@ html{
         padding-left: 2rem;
         font-size: 3em;
     }
-    /* home section */
-    .title{ /* home section top margin */
-        margin-top: 3rem;
-    }    
+    /* home section */  
     .title-button{ /* Button Position */
         margin-top: 3rem;
         margin-left: 1rem;
@@ -574,27 +343,12 @@ html{
         top: 0%;
         position: relative;
     }
-
     /* mission section */
-    .mission .regular-text-2{ /* mission lower text margin */
+    .mission .regular-text-2{ /* mission text margin */
         margin-left: 5% ;
         margin-right: 5%;
     }
-
     /* registration section */
-    .regimage-box {
-        right: 12%;
-    }
-    .regist-content{
-        padding-top: 10rem;
-    }
-    .regist-content .huge-text{
-        padding-bottom: 2rem;
-        font-size: 3.6em;
-    }
-    .regist-content .regular-text{
-        padding-bottom: 2rem ;
-    }
     .regist-button{ /* regist button sizing */
         font-size: 2em;
         padding: 1.5rem 5rem 2rem;
@@ -608,107 +362,7 @@ html{
     }
 }
 
-
-@media (max-width: 540px) { /* web sizing smol t*/
-    /* All */
-    .container{
-        padding: 5%;
-    }
-    .container-1{ /* container type 1 margin bottom*/
-        margin-bottom: 12rem;
-    }
-    .container-2{ /* container type 2 margin bottom*/
-        margin-bottom: 7rem;
-    }
-    .huge-text{ /* huge blue text sizing */
-        font-size: 2.85em;
-    }
-    .regular-text{ /* regular black text sizing */
-        font-size: 1.95em;
-    }
-    .regular-text-2{
-        font-size: 1.85rem;
-    }
-    html{
-        font-size: 40%;
-    }
-
-    /* Navbar */
-    .header {
-        padding: 1.7rem ;
-        border-bottom: 1px solid rgb(0, 0, 0);
-    }
-    .navbar{
-        margin-right: 0rem;
-    }
-    .navbar a { /* navbar button */
-        margin-left: 0.3rem;
-        font-size: 1.5em;
-    } 
-    .brand{
-        padding-left: 0.5rem;
-        font-size: 2.5em;
-    }
-
-    /* home section */
-    .title{ /* home section top margin */
-        margin-top: 3rem;
-    }    
-    .title-button{ /* Button Position */
-        margin-top: 3rem;
-        margin-left: 1rem;
-    }
-    .start-button{
-        font-size: 1.5em;
-    }
-    /* about us section*/
-    .right-bout{
-        margin-top: 7rem;
-    }
-    .left-bout {
-        width: 100%;
-    }
-    .left-bout img{
-        right: 30%;
-        top: 0%;
-        position: relative;
-    }
-
-    /* mission section */
-    .mission .regular-text-2{ /* mission lower text margin */
-        margin-left: 5% ;
-        margin-right: 5%;
-    }
-
-    /* registration section */
-    .regimage-box {
-        right: 11.5%;
-    }
-    .regist-content{
-        padding-top: 7rem;
-    }
-    .regist-content .huge-text{
-        font-size: 2.5em;
-        padding-bottom: 1rem;
-    }
-    .regist-content .regular-text{
-        padding-bottom: 1rem ;
-        font-size: 2em;
-    }
-    .regist-button{ /* regist button sizing */
-        font-size: 1.4em;
-        padding: 0.3rem 2rem 1rem;
-    }
-    .regist-button #learntext{ /* regist button text sizing */
-        display: inline-block;
-        margin-right: 1rem;
-    }
-    .regist-button #pointy{ /* regist button symbol sizing */
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 428px) { /* Phone Sizing huge*/
+@media (max-width: 512px) { /* Phone Sizing huge*/
     /* All */
     .container{
         padding: 5%;
@@ -725,10 +379,12 @@ html{
     .regular-text{
         font-size: 1.7em;
     }
+    .regular-text-2{
+        font-size: 1.7em;
+    }
     html{
         font-size: 40%;
     }
-
     /* Navbar */
     .header {
         padding: 2rem ;
@@ -746,9 +402,6 @@ html{
         font-size: 2.2em;
     }
     /* home section */
-    .title{ /* home section top margin */
-        margin-top: 3%;
-    }
     .title-button{ /* Button Position */
         margin-top: 3rem;
         margin-left: 0rem;
@@ -757,38 +410,11 @@ html{
         padding: 0.7em 2.8em;
         font-size: 1.3em;
     }
-
-    /* about us section */
-    .right-bout{
-        margin-top: 6rem;
-    }
-    .left-bout {
-        width: 100%;
-    }
-    .left-bout img{
-        right: 30%;
-        top: 0%;
-    }
-
-    /* mission section */
     .mission .regular-text-2{ /* mission lower text margin */
         margin-left: 5% ;
         margin-right: 5%;
     }
-
     /* registration section */
-    .regimage-box {
-        right: 11%;
-    }
-    .regist-content{
-        padding-top: 5rem;
-    }
-    .regist-content .huge-text{
-        padding-bottom: 1rem;
-    }
-    .regist-content .regular-text{
-        padding-bottom: 1rem ;
-    }
     .regist-button{ /* regist button sizing */
         font-size: 1.4em;
         padding: 0.3rem 2rem 1rem;
@@ -819,10 +445,12 @@ html{
     .regular-text{ /* regular black text sizing */
         font-size: 1.65em;
     }
+    .regular-text-2{
+        font-size: 1.65em;
+    }
     html{
         font-size: 40%;
     }
-
     /* Navbar */
     .header {
         padding: 1.3rem;
@@ -839,11 +467,7 @@ html{
         padding-left: 0.5rem;
         font-size: 2em;
     }
-
     /* home section */
-    .title{ /* home section top margin */
-        margin-top: 0%;
-    }
     .title-button{ /* Button Position */
         margin-top: 12%;
         margin-left: 0%;
@@ -851,39 +475,12 @@ html{
     .right-title{ /* image in homes section margin */
         margin-top: 1%;
     }
-
-    /* about us section */
-    .right-bout{
-        margin-top: 6rem;
-    }
-    .left-bout { /* about us image box size */
-        width: 100%;
-    }
-    .left-bout img{ /* about us image styling */
-        width: 100%;
-        right: 30%;
-        top: 0%;
-    }
-
     /* mission section */
-    .mission .regular-text-2{ /* mission lower text margin */
+    .mission { /* mission text margin */
         margin-left: 5% ;
         margin-right: 5%;
     }
-
     /* Registration section */
-    .regimage-box {/* registration image positioning */
-        right: 9%;
-    }
-    .regist-content{
-        padding-top: 4rem;
-    }
-    .regist-content .regular-text{
-        padding-bottom: 1rem ;
-    }
-    .regist-content .huge-text{
-        padding-bottom: 1rem;
-    }
     .regist-button{ /* regist button sizing */
         font-size: 1.4em;
         padding: 0.3rem 2rem 1rem;
