@@ -578,6 +578,16 @@ body{
       margin: 20px 0;
     }
 }
+
+@media (max-width: 530px) {
+    .home-container {
+      flex-direction: column;
+      height: auto;
+    }
+    .profile-card {
+      margin: 10px 0;
+    }
+}
   
 
 
